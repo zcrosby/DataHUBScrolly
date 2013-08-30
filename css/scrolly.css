@@ -1,6 +1,7 @@
 body, html{
 	font-family: Arial, Helvetica, sans-serif;
 	height: 100%;
+	background: url(DashboardScrolly/images/simplebackground1.jpg);
 }
 
 .gray{
@@ -39,21 +40,22 @@ body, html{
 
 #nav{
 	width: 70%;
-	height: 200px;
-	margin: 0 auto;
-	border: 1px solid black;
+	height: 30px;
+	margin: 50px auto 0 auto;
+	list-style-type: none;
+
 }
 
 #nav ul{
 	list-style-type: none;
 }
 
-#nav ul li{
-	width: 150px;
-	margin: 0 auto;
+#nav li{
+	width: 16%;
+	/*margin: 0 auto;*/
 	text-align: center;
-	border: 1px solid black;
 	float: left;
+	border: 1px solid black;
 }
 
 

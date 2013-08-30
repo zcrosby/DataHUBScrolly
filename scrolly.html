@@ -6,6 +6,7 @@
 	<title>scrolly</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/scrolly.css"/>
+
 </head>
 
 <body>
@@ -20,7 +21,7 @@
 	<hr/>
 </div>
 
-<ul class="nav nav-pills">
+<ul id="nav">
 	<li><a href="#">Education</a></li>
 	<li class="active"><a href="#">Human Services</a></li>
 	<li><a href="#">Arts/Culture</a></li>
@@ -29,34 +30,18 @@
 	<li><a href="#">Workforce</a></li>
 </ul>
 
-<!--<div id="nav">
-	<div>
-		<ul>
-			<li><a href="#">Education</a></li>
-			<li><a href="#">Human Services</a></li>
-			<li><a href="#">Arts/Culture</a></li>
-		</ul>
-	</div>
-	<br/>
-	<div>
-		<ul>
-			<li><a href="#">Health</a></li>
-			<li><a href="#">Environment</a></li>
-			<li><a href="#">Workforce</a></li>
-		</ul>
-	</div>
-</div><!-- End Nav -->
-
 <div class="header">
 	<h2>HUMAN SERVICES</h2>
 </div>
 
 <ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#youth-vio">Youth Violence</a></li>
-  <li><a href="#teen-births">Teen Births</a></li>
-  <li><a href="#foster-care">Foster Care</a></li>
-  <li><a href="#children">Children</a></li>
-  <li><a href="#fed-state">Federal/State $</a></li>
+  <li class="active"><a href="#youth-vio">Children In Poverty</a></li>
+  <li><a href="#teen-births">Teen Birth Rate</a></li>
+  <li><a href="#foster-care">Foster Care By Race</a></li>
+  <li><a href="#foster-survey">Foster Care Survey</a></li>
+  <li><a href="#crime">Crime</a></li>
+  <li><a href="#juve-crime">Juvenile Crime</a></li>
+  <li><a href="#TANF">TANF</a></li>
 </ul>
 
 <div class="tab-content">
@@ -65,20 +50,17 @@
 
   	<div class="tab-pane" id="foster-care">
 		<div id="FOSTER" style="align:left; padding-right:4px;">
-
-			<div class="tableauPlaceholder" style="width:1024px; height:694px;">
-				<noscript>
-					<a href="#">
-						<img alt="Dashboard 1 " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Ou&#47;OutofHomePlacement&#47;Dashboard1&#47;1_rss.png" style="border: none" />
-					</a>
-				</noscript>
-				<object class="tableauViz" width="1024" height="694" style="display:none;">
+		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js"></script>
+		<div class="tableauPlaceholder" style="width:1024px; height:820px;">
+			<noscript>
+				<a href="#">
+					<img alt=" " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;XY&#47;XYXY88RZG&#47;1_rss.png" style="border: none" />
+				</a></noscript>
+				<object class="tableauViz" width="1024" height="820" style="display:none;">
 					<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-					<param name="site_root" value="" />
-					<param name="name" value="OutofHomePlacement&#47;Dashboard1" />
-					<param name="tabs" value="no" />
+					<param name="path" value="shared&#47;XYXY88RZG" />
 					<param name="toolbar" value="yes" />
-					<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Ou&#47;OutofHomePlacement&#47;Dashboard1&#47;1.png" />
+					<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;XY&#47;XYXY88RZG&#47;1.png" />
 					<param name="animate_transition" value="yes" />
 					<param name="display_static_image" value="yes" />
 					<param name="display_spinner" value="yes" />
@@ -88,26 +70,17 @@
 			</div>
 			<div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
 				<div style="float:right; padding-right:8px;">
+					<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/XYXY88RZG" target="_blank">Learn About Tableau</a>
 				</div>
-			</div>		
+			</div>
 		</div>
   	</div><!--end foster care tab content -->
 
   	<div class="tab-pane" id="children">
 		<div id="HEADSTART" style="float:left; padding-right:8px;">
-
-			<div class="tableauPlaceholder" style="width: 654px; height: 629px; position: relative; overflow: hidden; display: block;">
-				<noscript>
-					&lt;a href="#"&gt;&lt;img alt="Dashboard 1 " src="http:&amp;#47;&amp;#47;public.tableausoftware.com&amp;#47;static&amp;#47;images&amp;#47;He&amp;#47;HeadStartParticipation&amp;#47;Dashboard1&amp;#47;1_rss.png" style="border: none" /&gt;&lt;/a&gt;
-				</noscript>
-				<iframe frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true" class="tableauViz" width="654" height="629" style="display: block; margin: 0px; padding: 0px; border: none; width: 654px; height: 629px;" src="http://public.tableausoftware.com/views/HeadStartParticipation/Dashboard1?:embed=y&amp;:host_url=http%3A%2F%2Fpublic.tableausoftware.com%2F&amp;:tabs=no&amp;:toolbar=yes&amp;:animate_transition=yes&amp;:display_static_image=yes&amp;:display_spinner=yes&amp;:display_overlay=yes&amp;:display_count=yes&amp;:loadOrderID=1">
-				</iframe>
-			</div>
-			<div style="width:554px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-				<div style="float:right; padding-right:8px;">
-				</div>
-			</div>		
-		</div>
+			<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js"></script><div class="tableauPlaceholder" style="width:1024px; height:820px;"><noscript><a href="#"><img alt=" " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;XY&#47;XYXY88RZG&#47;1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" width="1024" height="820" style="display:none;"><param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" /><param name="path" value="shared&#47;XYXY88RZG" /><param name="toolbar" value="yes" /><param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;XY&#47;XYXY88RZG&#47;1.png" /><param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /></object></div><div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;"><div style="float:right; padding-right:8px;"><a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/XYXY88RZG" target="_blank">Learn About Tableau</a></div></div>
+			
+		</div><!-- end of HEADSTART-->
   	</div><!--end Children tab content-->
 
   	<div class="tab-pane" id="fed-state">
@@ -141,7 +114,7 @@
 
 </div><!--end Tab Content -->
 </div><!-- end container-->
-<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js"></script>
+
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
