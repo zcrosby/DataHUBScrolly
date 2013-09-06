@@ -2,6 +2,7 @@
 <html>	
 
 <head>
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>scrolly</title>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -12,256 +13,67 @@
 <body>
 
 <div class="container">
-<div class="header">
-	<h1>COMMUNITY DASHBOARD</h1>
-</div>
+	<div class="header">
+		<h1>COMMUNITY DASHBOARD</h1>
+	</div>
 
-<div class="sub-header">
-	<h3>RI Foundation Sectors</h3>
-	<hr/>
-</div>
+	<div class="sub-header">
+		<h3>RI Foundation Sectors</h3>
+		<hr/>
+	</div>
 
-<ul id="nav">
-	<li><a href="#">Education</a></li>
-	<li class="active"><a href="#human-services">Human Services</a></li>
-	<li><a href="#">Arts/Culture</a></li>
-	<li><a href="#">Health</a></li>
-	<li><a href="#">Environment</a></li>
-	<li><a href="#">Workforce</a></li>
-</ul>
+	<div id="nav">
+		<ul>
+			<li><a href="#education">Education</a></li>
+			<li class="active"><a href="#human-services">Human Services</a></li>
+			<li><a href="#">Arts/Culture</a></li>
+			<li><a href="#">Health</a></li>
+			<li><a href="#">Environment</a></li>
+			<li><a href="#">Workforce</a></li>
+		</ul>
+	</div>
 
-<div class="header" id="human-services">
-	<h2>HUMAN SERVICES</h2>
-</div>
-
-<ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#children-inpoverty">Children In Poverty</a></li>
-  <li><a href="#teen-birth-rate">Teen Birth Rate</a></li>
-  <li><a href="#foster-byrace">Foster Care By Race</a></li>
-  <li><a href="#foster-survey">Foster Care Survey</a></li>
-  <li><a href="#crime">Crime</a></li>
-  <li><a href="#juve-crime">Juvenile Crime</a></li>
-  <li><a href="#TANF">TANF</a></li>
-</ul>
-
-<div class="tab-content">
-
-	<div class="tab-pane active" id="children-inpoverty">
-		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js">
-		</script>
-		<div class="tableauPlaceholder" style="width:1024px; height:794px;">
-			<noscript>
-				<a href="#">
-					<img alt="Children In Poverty " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;NN&#47;NNFTHRQXX&#47;1_rss.png" style="border: none" />
-				</a>
-			</noscript>
-			<object class="tableauViz" width="1024" height="794" style="display:none;">
-				<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-				<param name="path" value="shared&#47;NNFTHRQXX" />
-				<param name="toolbar" value="yes" />
-				<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;NN&#47;NNFTHRQXX&#47;1.png" />
-				<param name="animate_transition" value="yes" />
-				<param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" />
-				<param name="display_overlay" value="yes" />
-				<param name="display_count" value="yes" />
-			</object>
+	<div class="sector" id="education">
+		<div class="header">
+			<h2>EDUCATION</h2>
 		</div>
-		<div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-			<div style="float:right; padding-right:8px;">
-				<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/NNFTHRQXX" target="_blank">
-					Learn About Tableau
-				</a>
-			</div>
+		<iframe class="frame-specs" src="http://public.tableausoftware.com/views/Education_6/SIXYearGraduationRate?:embed=y&:display_count=no" seamless="seamless">
+		</iframe>
+
+		<!--<iframe class="frame-specs" src="test.html"></iframe>-->
+	</div><!--End Education -->
+
+	<div class="sector" id="human-services">
+		<div class="header">
+			<h2>HUMAN SERVICES</h2>
 		</div>
-	</div><!--End Teen Birth Rate Tab Content-->
 
 
-	<div class="tab-pane" id="teen-birth-rate">
-		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js">
-		</script>
-		<div class="tableauPlaceholder" style="width:654px; height:734px;">
-			<noscript>
-				<a href="#">
-					<img alt="Birth rates for teenagers aged 15-19, by state: United States and each state and territory, 2010 and 2011 " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;7X&#47;7XYYRJJK3&#47;1_rss.png" style="border: none" />
-				</a>
-			</noscript>
-			<object class="tableauViz" width="654" height="734" style="display:none;">
-				<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-				<param name="path" value="shared&#47;7XYYRJJK3" />
-				<param name="toolbar" value="yes" />
-				<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;7X&#47;7XYYRJJK3&#47;1.png" />
-				<param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" />
-				<param name="display_overlay" value="yes" />
-				<param name="display_count" value="yes" />
-			</object>
-		</div>
-		<div style="width:654px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-			<div style="float:right; padding-right:8px;">
-				<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/7XYYRJJK3" target="_blank">
-					Learn About Tableau
-				</a>
-			</div>
-		</div>
-	</div><!--End Teen Birth Rate Tab Content-->
+<!--<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js"></script><div class="tableauPlaceholder" style="width:100%; height:100%;"><noscript><a href="null"><img alt=" " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Hu&#47;HumanServices_0&#47;ChildrenInPoverty&#47;1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" width="1024" height="100%" style="display:none;"><param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" /><param name="site_root" value="" /><param name="name" value="HumanServices_0&#47;ChildrenInPoverty" /><param name="tabs" value="yes" /><param name="toolbar" value="yes" /><param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;Hu&#47;HumanServices_0&#47;ChildrenInPoverty&#47;1.png" /><param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /></object></div><div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;"><div style="float:right; padding-right:8px;"><a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/views/HumanServices_0/ChildrenInPoverty" target="_blank">Learn About Tableau</a></div></div>-->
 
 
-  	<div class="tab-pane" id="foster-byrace">
-		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js">
-		</script>
-		<div class="tableauPlaceholder" style="width:1024px; height:694px;">
-			<noscript>
-				<a href="#">
-					<img alt="Foster Care By Race " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;QS&#47;QSY89ZZM6&#47;1_rss.png" style="border: none" />
-				</a>
-			</noscript>
-			<object class="tableauViz" width="1024" height="694" style="display:none;">
-				<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-				<param name="path" value="shared&#47;QSY89ZZM6" />
-				<param name="toolbar" value="yes" />
-				<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;QS&#47;QSY89ZZM6&#47;1.png" />
-				<param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" />
-				<param name="display_spinner" value="yes" />
-				<param name="display_overlay" value="yes" />
-				<param name="display_count" value="yes" />
-			</object>
-		</div>
-		<div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-			<div style="float:right; padding-right:8px;">
-				<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/QSY89ZZM6" target="_blank">
-					Learn About Tableau
-				</a>
-			</div>
-		</div>
-  	</div><!--End Foster Care by Race Tab Content -->
+		<iframe class="frame-specs" src="http://public.tableausoftware.com/views/HumanServices_0/ChildrenInPoverty?:embed=y&:display_count=no" seamless="seamless">
+		</iframe>
+	</div><!--End Human Service -->
 
-
-	<div class="tab-pane" id="foster-survey">
-		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js">
-		</script>
-		<div class="tableauPlaceholder" style="width:1024px; height:1624px;">
-			<noscript>
-				<a href="#">
-					<img alt="Census of Juveniles in Residential Placement(Rhode Island 1997-2010) " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;3C&#47;3CJFCZ85G&#47;1_rss.png" style="border: none" />
-				</a>
-			</noscript>
-			<object class="tableauViz" width="1024" height="1624" style="display:none;">
-				<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-				<param name="path" value="shared&#47;3CJFCZ85G" />
-				<param name="toolbar" value="yes" />
-				<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;3C&#47;3CJFCZ85G&#47;1.png" />
-				<param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" />
-				<param name="display_overlay" value="yes" />
-				<param name="display_count" value="yes" />
-			</object>
-		</div>
-		<div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-			<div style="float:right; padding-right:8px;">
-				<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/3CJFCZ85G" target="_blank">
-					Learn About Tableau
-				</a>
-			</div>
-		</div>
-	</div><!--End Foster Care Survey Tab Content -->
-
-
-  	<div class="tab-pane" id="crime">
-  		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js">
-  		</script>
-  		<div class="tableauPlaceholder" style="width:654px; height:921px;">
-  			<noscript>
-  				<a href="#">
-  					<img alt="Crime In RI (FBI Data) " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;HX&#47;HXF26BNRW&#47;1_rss.png" style="border: none" />
-  				</a>
-  			</noscript>
-  			<object class="tableauViz" width="654" height="921" style="display:none;">
-  				<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-  				<param name="path" value="shared&#47;HXF26BNRW" />
-  				<param name="toolbar" value="yes" />
-  				<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;HX&#47;HXF26BNRW&#47;1.png" />
-  				<param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" />
-  				<param name="display_overlay" value="yes" />
-  				<param name="display_count" value="yes" />
-  			</object>
-  		</div>
-  		<div style="width:654px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-  			<div style="float:right; padding-right:8px;">
-  				<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/HXF26BNRW" target="_blank">
-  					Learn About Tableau
-  				</a>
-  			</div>
-  		</div>
-  	</div><!--End Crime Tab Content-->
-
-  	<div class="tab-pane" id="juve-crime">
-  		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js">
-  		</script>
-  		<div class="tableauPlaceholder" style="width:1024px; height:920px;">
-  			<noscript>
-  				<a href="#">
-  					<img alt=" " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;CR&#47;CRHMHTKFT&#47;1_rss.png" style="border: none" />
-  				</a>
-  			</noscript>
-  			<object class="tableauViz" width="1024" height="920" style="display:none;">
-  				<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-  				<param name="path" value="shared&#47;CRHMHTKFT" />
-  				<param name="toolbar" value="yes" />
-  				<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;CR&#47;CRHMHTKFT&#47;1.png" />
-  				<param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" />
-  				<param name="display_overlay" value="yes" />
-  				<param name="display_count" value="yes" />
-  			</object>
-  		</div>
-  		<div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-  			<div style="float:right; padding-right:8px;">
-  				<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/CRHMHTKFT" target="_blank">
-  					Learn About Tableau
-  				</a>
-  			</div>
-  		</div>
-  	</div><!--End Juvenile Crime Tab Content-->  	
-
-
-  	<div class="tab-pane" id="TANF">
-  		<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js">
-  		</script>
-  		<div class="tableauPlaceholder" style="width:654px; height:719px;">
-  			<noscript>
-  				<a href="#">
-  					<img alt="TANF Dash " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;47&#47;47RR2TQ38&#47;1_rss.png" style="border: none" />
-  				</a>
-  			</noscript>
-  			<object class="tableauViz" width="654" height="719" style="display:none;">
-  				<param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" />
-  				<param name="path" value="shared&#47;47RR2TQ38" />
-  				<param name="toolbar" value="yes" />
-  				<param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;47&#47;47RR2TQ38&#47;1.png" />
-  				<param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" />
-  				<param name="display_spinner" value="yes" />
-  				<param name="display_overlay" value="yes" />
-  				<param name="display_count" value="yes" />
-  			</object>
-  		</div>
-  		<div style="width:654px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;">
-  			<div style="float:right; padding-right:8px;">
-  				<a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/47RR2TQ38" target="_blank">
-  					Learn About Tableau
-  				</a>
-  			</div>
-  		</div>
-	</div><!-- End TANF Tab Content-->
-
-</div><!--end Tab Content -->
 </div><!-- end container-->
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js"></script>
+<script type="text/javascript" src="js/scrolly.js"></script>
+
 <script type="text/javascript">
-	$(function () {
-	    $('#myTab a').click(function (e) {
+	/*$(function () {
+		$('#myTab a').click(function (e) {
 	  		e.preventDefault();
 	  		$(this).tab('show');
 		})
-	  })
+	}
+
+	function resizeFrame(){
+		console.log('Hiheih');
+	}*/
 </script>
 </body>
 </html>
