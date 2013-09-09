@@ -1,26 +1,33 @@
-var viz, workbook, activeSheet;
+var mOver = function MouseOver(){
+  /*this.style =*/
+
+  console.log("moused over!"); 
+
+}
+
+var mOut = function MouseOut(){
+  /*this.style =*/
+
+  console.log("moused out!"); 
+
+}
+
+ 
+var r = $('a');
+
+console.log(r); 
 
 
-var pageWidth = $('body').innerWidth();
-var pageHeight = $('body').innerHeight();
 
 
-function initializeViz() {
-  var placeholderDiv = document.getElementById("tableauViz");
-  var url = "http://public.tableausoftware.com/views/Education_6/FourYearGraduationRate";
-  var options = {
-    width: placeholderDiv.offsetWidth,
-    height: placeholderDiv.offsetHeight,
-    hideTabs: false,
-    hideToolbar: true,
-    onFirstInteractive: function () {
-      workbook = viz.getWorkbook();
-      activeSheet = workbook.getActiveSheet();
-    }
-  };
 
-  viz = new tableauSoftware.Viz(placeholderDiv, url, options);
-  /*viz.setFrameSize();*/
-}  
 
-$(initializeViz);
+
+
+
+
+
+
+
+/*$('nav').onmouseover = mOver;
+$('nav').onmouseout = mOut;*/
