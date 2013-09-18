@@ -1,5 +1,4 @@
 
-
 function addHomeBtn(){
   var theWindow = $(window);
   var windowTop;

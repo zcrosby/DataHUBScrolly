@@ -4,7 +4,6 @@ body, html{
 }
 
 body{
-	/*background-color: #F2EDAE; AM*/
 	font-family: 'News Cycle', Arial, sans-serif;
 }
 
@@ -33,7 +32,6 @@ h1, h2, h3, h4, h5{
 	width: 100%;
 	background-color: #FFFFFF;
 	margin: 0 auto 0 auto;
-	/*border: 2px solid #000;*/
 
 }
 /*#FAF5FA*/
@@ -45,39 +43,50 @@ h1, h2, h3, h4, h5{
 	/*border: 1px solid black;*/
 }
 
-#RI-Foun-header h3{
-	padding: 30px 0 10px 0;
+#RI-Foun-header {
+	position: relative;
+	width: 201px;
+	margin: 0 auto;
 }
 
-
+#RI-Foun-header h3{
+	width: 201px;
+	padding: 30px 0 10px 0;
+}
 
 #Home-Btn{
 	display: none;
 	position: absolute;
-	left: 471px;
-	top: 21px;
+	left:-66px;
+	top:21px;
 }
 
 
 #nav{
-	width: 90%;
+	width: 960px;
 	height: 35px;
-	margin: 15px auto 10px auto;
-	list-style-type: none;
-	
+	margin: 20px auto 10px auto;
+	list-style-type: none;	
 }
 
 #nav ul{
-	width: 100%;
-	/*display: -webkit-box;*/
 
+	/*width: 95%;
+	margin: auto;*/
+	margin:0px;
+    padding:0px;
+	width: 100%;
 	list-style-type: none;
 }
 
 #nav li{
-    /*-webkit-box-flex: 1;*/
-	font-size: 1.15em;
+	margin-left: 40px;
 	display: inline;
+	font-size: 1.15em;
+}
+
+#nav li.first{
+    margin-left:0px;
 }
 
 #nav li a{
@@ -88,7 +97,7 @@ h1, h2, h3, h4, h5{
 #nav li a:visited{
 	color: white;
 	background-color: #008080;
-	border-radius: 4px;
+	border-radius: 8px;
 }
 
 #nav li a:hover{
@@ -119,6 +128,10 @@ h1, h2, h3, h4, h5{
 #title-image{
 	padding: 170px 0 0 0;
 	margin: 0 0 0 30px;
+}
+
+#title-image img{
+	width:;
 }
 
 .content{
@@ -209,4 +222,77 @@ h1, h2, h3, h4, h5{
 #footer .content{
 	margin: 37px auto 20px auto;
 	text-align: center;
+}
+
+
+/* iPads (portrait) ----------- 
+
+@media screen (max-device-width: 768px) {
+
+	.container{
+		max-width: 100%;
+	}
+
+	#RI-Foun-header h3{
+		margin-left: 282px;
+	}
+
+	#Home-Btn{
+		left: 235px;
+	}
+
+	#nav{
+		min-width: 100%;
+	}
+
+	#nav ul{
+		width: 100%;
+	}	
+
+	#nav li{
+		margin-left: 4px;
+		font-size: 1em;
+	}
+
+	.title-header{
+		width: 55%;
+		margin: 0 36px 0 54px;
+	}
+
+	.title-header h1{
+		font-size: 2.2em;
+	}
+
+	#title-image{
+		padding: 193px 0 0 0;
+	}
+
+	#title-image img {
+		width: 170px;
+	}
+
+	.content {
+		font-size: 1.15em;
+	}
+
+	#divToAddHomeBtn {
+		height: 335px;
+	}
+
+	.title-container .content {
+		font-size: 1.4em;
+		padding: 35px 0;
+	}
+
+	.sector iframe {
+		width: 98%;
+	}
+
+}
+*/
+
+/* Smartphones (portrait) ----------- */
+@media screen (max-device-width: 320px) {
+
+
 }
