@@ -80,7 +80,10 @@ h1, h2, h3, h4, h5{
 }
 
 #nav li{
-	margin-left: 40px;
+
+    margin-left: 40px;
+	font-size: 1.15em;
+
 	display: inline;
 	font-size: 1.15em;
 }
