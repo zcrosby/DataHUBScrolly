@@ -228,6 +228,7 @@ h1, h2, h3, h4, h5{
 	font-family: 'News Cycle', Arial, sans-serif;
 	font-weight: 700;
 }
+
 .container{
 	position: relative;
 	max-width: 100%;
@@ -241,8 +242,9 @@ h1, h2, h3, h4, h5{
 }
 
 .header{
-	position: fixed;
+	position: absolute;
 	width: 100%;
+	top:0px;
 	background-color: #FFFFFF;
 	margin: 0 auto 0 auto;
 
@@ -276,16 +278,21 @@ h1, h2, h3, h4, h5{
 }
 
 
-#Home-Btn{
+#home-btn{
 	display: none;
 	position: absolute;
 	left:-66px;
 	top:21px;
 }
 
-.ie9 #Home-Btn{
+.ie9 #home-btn{
 	left: -11px;
 	top: 22px;
+}
+
+#home-btn img{
+	width: 50px;
+	height: 50px;
 }
 
 #nav{
@@ -346,25 +353,17 @@ h1, h2, h3, h4, h5{
 	font-size: 2.7em;
 }
 
-.title-header .head1{
-	/*margin-left: 120px*/
-}
-
-.title-header .head2{
-	/*margin-left: 210px*/
-}
-
 #title-image{
 	padding: 170px 0 0 0;
 	margin: 0 0 0 30px;
 }
 
 #title-image img{
-	width:;
+	width: 225px;
+	height: 225px;
 }
 
 .content{
-	width: 90%;
 	text-align: left;
 	margin: 40px auto 20px auto;
 	font-size: 1.25em;
@@ -395,7 +394,8 @@ h1, h2, h3, h4, h5{
 }
 
 .sector{
-	width: 100%;
+	width: 85%;
+	margin: 0 auto;
 	padding-bottom: 100px;	
 }
 
@@ -429,6 +429,10 @@ h1, h2, h3, h4, h5{
 	width: 100%;
 	height:750px;
 	background-color: #fff;
+}
+
+#tabs{
+
 }
 
 #education{

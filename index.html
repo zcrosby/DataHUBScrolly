@@ -2,90 +2,104 @@
 <!--[if IE 8]>         <html class="no-js ie8"> <![endif]-->
 <!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
 	<title>scrolly</title>
-
 	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
-
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 	<link rel="stylesheet" type="text/css" href="css/scrolly.css"/>
-
 </head>
 
 <body>
-
-<div class="container" id="home">
-	
+<div id="home" class="container">
 	<div class="header">
 		<div id="RI-Foun-header">
-
-			<div id="Home-Btn">
-				<a href="#home"><img src="images/RIStrategyCircle_50x.png" width="50" height="50"></a>
+			<div id="home-btn">
+				<a href="#home"><img src="images/RIStrategyCircle_50x.png"></a>
 			</div>
-
 			<h3>RI Foundation Sectors</h3>
-			
-
 		</div>
-
 		<div id="nav">
 			<ul>
 				<li class="first"><a class="active" href="#education">Education</a></li>
-
 				<li><a href="#human-services">Human Services</a></li>
 				<li><a href="#environment">Environment</a></li>
 				<li><a href="#">Arts/Culture</a></li>
 				<li><a href="#">Health</a></li>
 				<li><a href="#">Workforce</a></li>
 				<li class="last"><a href="#">Make It Happen</a></li>
-
 			</ul>
 		</div>
 	</div>
 	
 	<div class="title-container">
-
 		<div class="title-header">
-			<div class="head1">
+			<div class="sub-head1">
 				<h1 >The Rhode Island Foundation</h1>
 			</div>
-
-			<div class="head2">
+			<div class="sub-head2">
 				<h1 >Community Dashboard</h1>
 			</div>
 		</div><!--end title-header-->
-
 		<div id="title-image">
-			<img src="images/RIStrategyCircle.png" width="225" height="225">
+			<img src="images/RIStrategyCircle.png" >
 		</div>
 		<div id="divToAddHomeBtn" class="content">
 			<p>Welcome to the Community Dashboard!</p>
-			
-			<p>Want to know more about the issues you care about in Rhode Island? Our community dashboard, developed with The Providence Plan, provides data on key indicators in the Foundation's areas of work, beginning with education and health care (more data to follow). It is our hope that this will help YOU become more informed and more engaged in issues that are central to Rhode Island's quality of life.</p>
+			<p>
+				Want to know more about the issues you care about in Rhode Island? Our community dashboard, developed with The Providence Plan, provides data on key indicators in the Foundation's areas of work, beginning with education and health care (more data to follow). It is our hope that this will help YOU become more informed and more engaged in issues that are central to Rhode Island's quality of life.
+			</p>
 		</div>
 	</div><!--end title-container-->
 
 
 <!-- Begin Sectors -->
 	<div id="scrolly-content">
-		<div class="sector" id="education">
+
+	<!--BEGIN Education Sector-->
+		<div id="education" class="sector">
 			<div class="sector-header">
 				<h2>Education</h2>
 			</div>
-
 			<div class="content">
 				<p>These indicators of student outcomes and educational leadership provide a snapshot of the state of public education in Rhode Island, including independent charter schools. The Foundation's goal in the education sector is to help reduce statewide drop-out rates for at-risk students. Here are a couple of charts to help depict the graduation rates our state.</p>
 			</div>
-			<div class="frame-holder">
-				<iframe src="http://public.tableausoftware.com/views/Education_6/FourYearGraduationRate?:embed=y&:display_count=no" seamless="seamless">
+
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+				  <li class="active"><a href="#four-year-grad-rate" data-toggle="tab">Graduation Rate</a></li>
+				  <li><a href="#multi-tab-test" data-toggle="tab">Multi Tab Test</a></li>
+				  <li><a href="">Lorem Ipsum</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+			  <div class="tab-pane active" id="four-year-grad-rate">
+			  	<iframe src="http://public.tableausoftware.com/views/Education_6/FourYearGraduationRate?:embed=y&:display_count=no &:showVizHome=no#2" seamless="seamless"></iframe>
+			  </div>
+
+			  <div class="tab-pane" id="multi-tab-test">
+			  	<iframe src="http://public.tableausoftware.com/views/Enviorment/EnergyConsumed?:embed=y&:display_count=no &:showVizHome=no#2" seamless="seamless">
 				</iframe>
 			</div>
-		</div><!--End Education -->
 
+			  <div class="tab-pane" id=""></div>
+
+			  <div class="tab-pane" id=""></div>
+
+			  <div class="tab-pane" id=""></div>
+			</div>
+
+			<!--DEBUG
+			<div class="frame-holder">
+				<iframe src="http://public.tableausoftware.com/views/Education_6/FourYearGraduationRate?:embed=y&:display_count=no" seamless="seamless"></iframe>
+			</div>
+			-->
+		</div><!--END Education Sector-->
+
+
+
+	<!--BEGIN Human Services Sector-->
 		<div class="sector" id="human-services">
 			<div class="sector-header">
 				<h2>Human Services</h2>
@@ -96,11 +110,14 @@
 			</div>
 
 			<div class="frame-holder">
-				<iframe src="http://public.tableausoftware.com/views/HumanServices_0/ChildrenInPoverty?:embed=y&:display_count=no" seamless="seamless">
+				<iframe src="http://public.tableausoftware.com/views/HumanServices_0/ChildrenInPoverty?:embed=y&:display_count=no &:showVizHome=no#2" seamless="seamless">
 				</iframe>
 			</div>
-		</div><!--End Human Service -->
+		</div><!--END Human Services Sector -->
 
+
+
+	<!--BEGIN Environment Sector -->
 		<div class="sector" id="environment">
 			<div class="sector-header">
 				<h2>Environment</h2>
@@ -111,21 +128,18 @@
 			</div>
 
 			<div class="frame-holder">
-				<iframe src="http://public.tableausoftware.com/views/Enviorment/EnergyConsumed?:embed=y&:display_count=no" seamless="seamless">
+				<iframe src="http://public.tableausoftware.com/views/Enviorment/EnergyConsumed?:embed=y&:display_count=no &:showVizHome=no#2" seamless="seamless">
 				</iframe>
 			</div>
 			
-		</div><!--End Environment -->
-	</div>
-<!--End Sectors -->
-
+		</div><!--END Environment Sector-->
+	</div><!--End Sectors -->
 </div><!-- end container-->
 
 <div id="footer">
 	<div class="content">
 		Rhode Island Foundation -- Community Dashboard 
 	</div>
-
 </div>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
