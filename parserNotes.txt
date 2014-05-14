@@ -1,0 +1,44 @@
+ind = {}
+	ind_list = []
+
+	for i in worksheet_items:
+		ind["indicator"] = i[0]
+		ind["sector"] = i[1]
+		ind["sub-sector"] = i[2]
+		ind["chart-url"] = i[3]
+
+		ind_list.append(ind)
+
+
+
+
+
+
+while i < num_of_rows:
+		fields = ['indicator', 'sector', 'sub-sector', 'chart-url']
+		i += 1
+		row = worksheet.row(i)
+		for r in row:
+			cleaned_row = str(r).replace("text:u", "")
+			cleaned_row = cleaned_row.replace("empty:''", "'n/a'")
+
+			#ind["indicator"] = cleaned_row
+			#ind["sector"] = cleaned_row
+			#ind["sub-sector"] = cleaned_row
+			#ind["chart-url"] = cleaned_row
+		worksheet_items.append(dict(zip(fields, cleaned_row)
+
+	print worksheet_items
+
+
+
+
+
+
+
+
+fields = ['indicator', 'sector', 'sub-sector', 'chart-url']
+	#ADD each row to list:
+ 	for row in xrange(num_of_rows):
+		worksheet_items.append(dict(zip(fields, row)))
+	print(worksheet_items)
