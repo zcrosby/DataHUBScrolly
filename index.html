@@ -1,9 +1,393 @@
-<html>
+<!DOCTYPE html>
+<!--[if IE 8]>         <html class="no-js ie8"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <head>
-	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>RI Community Dashboard</title>
+	<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+	<link rel="stylesheet" type="text/css" href="css/scrolly.css"/>
 </head>
+
 <body>
-<script type="text/javascript" src="http://public.tableausoftware.com/javascripts/api/viz_v1.js"></script><div class="tableauPlaceholder" style="width:1024px; height:820px;"><noscript><a href="#"><img alt=" " src="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;XY&#47;XYXY88RZG&#47;1_rss.png" style="border: none" /></a></noscript><object class="tableauViz" width="1024" height="820" style="display:none;"><param name="host_url" value="http%3A%2F%2Fpublic.tableausoftware.com%2F" /><param name="path" value="shared&#47;XYXY88RZG" /><param name="toolbar" value="yes" /><param name="static_image" value="http:&#47;&#47;public.tableausoftware.com&#47;static&#47;images&#47;XY&#47;XYXY88RZG&#47;1.png" /><param name="animate_transition" value="yes" /><param name="display_static_image" value="yes" /><param name="display_spinner" value="yes" /><param name="display_overlay" value="yes" /><param name="display_count" value="yes" /></object></div><div style="width:1024px;height:22px;padding:0px 10px 0px 0px;color:black;font:normal 8pt verdana,helvetica,arial,sans-serif;"><div style="float:right; padding-right:8px;"><a href="http://www.tableausoftware.com/public/about-tableau-products?ref=http://public.tableausoftware.com/shared/XYXY88RZG" target="_blank">Learn About Tableau</a></div></div>
+<div id="home" class="container">
+	<div class="header">
+		<div id="RI-Foun-header">
+			<div id="home-btn">
+				<a href="#home"><img src="images/RIStrategyCircle_50x.png"></a>
+			</div>
+			<h3>RI Foundation Sectors</h3>
+		</div>
+		<div id="nav">
+			<ul>
+				<li class="first"><a class="active" href="#education">Education</a></li>
+				<li><a href="#human-services">Human Services</a></li>
+				<li><a href="#environment">Environment</a></li>
+				<li><a href="#arts-culture">Arts/Culture</a></li>
+				<li><a href="#economy">Economy</a></li>
+				<li><a href="#housing">Housing</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="title-container">
+		<div class="title-header">
+			<div class="sub-head1">
+				<h1 >The Rhode Island Foundation</h1>
+			</div>
+			<div class="sub-head2">
+				<h1 >Community Dashboard</h1>
+			</div>
+		</div><!--end title-header-->
+		<div id="title-image">
+			<img src="images/RIStrategyCircle.png" >
+		</div>
+		<div id="divToAddHomeBtn" class="content">
+			<p>Welcome to the Community Dashboard!</p>
+			<p>
+				Want to know more about the issues you care about in Rhode Island? Our community dashboard, developed with The Providence Plan, provides data on key indicators in the Foundation's areas of work, beginning with education and health care (more data to follow). It is our hope that this will help YOU become more informed and more engaged in issues that are central to Rhode Island's quality of life.
+			</p>
+		</div>
+	</div><!--end title-container-->
+
+
+<!-- Begin Sectors -->
+	<div id="scrolly-content">
+
+	<!--BEGIN Education Sector-->
+		<div id="education" class="sector">
+			<div class="sector-header">
+				<h2>Education</h2>
+			</div>
+			<div class="content">
+				<p>These indicators of student outcomes and educational leadership provide a snapshot of the state of public education in Rhode Island, including independent charter schools. The Foundation's goal in the education sector is to help reduce statewide drop-out rates for at-risk students. Here are a couple of charts to help depict the graduation rates our state.</p>
+			</div>
+
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+					<li class="active"><a href="#four-year-grad-rate" data-toggle="tab">Four Year Graduation Rates</a></li>
+					<li class=" dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Administrator Tenure <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#principal-tenure-elementary" data-toggle="tab">Principal Tenure at Elementary</a></li>
+							<li><a href="#principal-tenure-middle" data-toggle="tab">Principal Tenure at Middle</a></li>
+							<li><a href="#principal-tenure-highschool" data-toggle="tab">Principal Tenure at HS</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">School Attendance<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#chronic-absenteeism" data-toggle="tab"> Chronic Absenteeism</a></li>
+							<li><a href="#incidents-of-suspension" data-toggle="tab">Incidents of Suspension</a></li>
+							<li><a href="#student-eligibility-subsidized-lunch" data-toggle="tab">Student Eligibility for Subsidized Lunch</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="four-year-grad-rate">
+				  	<iframe src="http://public.tableausoftware.com/views/Education_6/FourYearGraduationRate?:embed=y&:display_count=no &:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="principal-tenure-elementary">
+				  	<iframe src="http://public.tableausoftware.com/views/Education_6/PrincipleTenure?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="principal-tenure-middle">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/PrincipleTenure?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="principal-tenure-highschool">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/PrincipleTenure?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="chronic-absenteeism">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/Absenteeism?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="incidents-of-suspension">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/SchoolSuspensions?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="student-eligibility-subsidized-lunch">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/FreeReducedLunch?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Education Sector-->
+
+
+	<!--BEGIN Human Services Sector-->
+		<div id="human-services" class="sector">
+			<div class="sector-header">
+				<h2>Human Services</h2>
+			</div>
+
+			<div class="content">
+				<p>The Foundation's goals for our work in the health sector are to reduce the number of Rhode Islanders without a primary care "medical home" and to increase the number of primary care physicians practicing in Rhode Island. The indicators in this section provide critical information about population health and access to care in Rhode Island. Explore data on access to care, chronic disease, and health behavior in our state.</p>
+			</div>
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+
+					<li class="active dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Primary Care Professionals <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#primary-care-physicians" data-toggle="tab">Primary Care Physicians</a></li>
+							<li><a href="#primary-care-physicians-map" data-toggle="tab">Primary Care Physicians Map</a></li>
+							<li><a href="#health-insurance-coverage" data-toggle="tab">Health Insurance Coverage</a></li>
+							<li><a href="#health-insurance-coverage-map" data-toggle="tab">Health Insurance Coverage Map</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Centered Medical Home <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#children-with-medical-home" data-toggle="tab">Children with Medical Home</a></li>
+							<li><a href="#children-with-medical-home-map" data-toggle="tab">Children with medical home map</a></li>
+							<li><a href="#preventive-care" data-toggle="tab">Preventive Care</a></li>
+							<li><a href="#preventive-care-map" data-toggle="tab">Preventive Care Map</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Chronic Disease <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#diabetes" data-toggle="tab">Diabetes</a></li>
+							<li><a href="#obesity" data-toggle="tab">Obesity</a></li>
+							<li><a href="#smoking" data-toggle="tab">Smoking</a></li>
+							<li><a href="#cardiovascular-disease" data-toggle="tab">Cardiovascular Disease</a></li>
+						</ul>
+					</li>
+
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="primary-care-physicians">
+				  	<iframe src="http://public.tableausoftware.com/views/Health_6/PRIMARYCAREPHYSICIANS?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="primary-care-physicians-map">
+				  	<iframe src="http://public.tableausoftware.com/views/Health_6/PRIMARYCAREPHYSICIANSMAP?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="health-insurance-coverage">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/AdultsWithoutHealthInsurance?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="health-insurance-coverage-map">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/AdultsWithoutHealthInsuranceMap?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="children-with-medical-home">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/MedicalHomebyState?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="children-with-medical-home-map">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/MedicalHomeMap?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="preventive-care">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/PreventiveCareDashboard?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="preventive-care-map">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/PreventiveCareMapDashboard?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="diabetes">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/DiabetesDashboard?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="obesity">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/ObesityDashboard?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="smoking">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/CigarettesDashboard?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="cardiovascular-disease">
+					<iframe src="http://public.tableausoftware.com/views/Health_6/CardiovascularDashboard?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Human Services Sector -->
+
+
+	<!--BEGIN Environment Sector -->
+		<div id="environment" class="sector" >
+			<div class="sector-header">
+				<h2>Environment</h2>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nisl purus, at volutpat odio scelerisque et. Mauris dictum ipsum nec nibh tincidunt hendrerit. Fusce eu nunc non velit vestibulum ullamcorper. Nulla lacinia erat commodo, sagittis justo et, tempus libero. Fusce quis sem magna. Aliquam dapibus felis ut euismod feugiat. Morbi vestibulum sem mauris, pulvinar scelerisque nunc fermentum quis.</p>
+			</div>
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+
+				  	<li class="active dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Water and Air Quality <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#beach-closures" data-toggle="tab">Beach Closures</a></li>
+							<li><a href="#days-exceeding-ozone-standard" data-toggle="tab">Days Exceeding Ozone Standard</a></li>
+							<li><a href="#mean-sea-level" data-toggle="tab">Mean Sea Level</a></li>
+							<li><a href="#impervious-cover" data-toggle="tab">Impervious Cover</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Local Food<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#agricultural-converted-developed-land" data-toggle="tab">Agricultural Land Converted to Developed Land</a></li>
+							<li><a href="#agricultural-sales" data-toggle="tab">Agricultural Sales</a></li>
+						</ul>
+					</li>
+					<li><a href="#means-transportation-work" data-toggle="tab">Means of Transportation to Work</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane" id="beach-closures">
+					<iframe src="http://public.tableausoftware.com/views/Enviorment/BeachClosuresandRainfallbyYear?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="days-exceeding-ozone-standard">
+					<iframe src="http://public.tableausoftware.com/views/Enviorment/DaysExceedingthe8-HourOzoneStandardinRhodeIsland?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="mean-sea-level">
+					<iframe src="http://public.tableausoftware.com/views/Enviorment/SeaLevel?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="impervious-cover">
+					<iframe src="http://public.tableausoftware.com/views/Enviorment/ImperviousCoverPCT?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="agricultural-converted-developed-land">
+					<iframe src="http://public.tableausoftware.com/views/Enviorment/AgriculturalLandConvertedtoDevelopedLand?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="agricultural-sales">
+					<iframe src="http://public.tableausoftware.com/views/Enviorment/Agriculturalproductssolddirectlytoindividuals_1?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="means-transportation-work">
+					<iframe src="http://public.tableausoftware.com/views/Enviorment/CommuteTypeofWorkers16?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Environment Sector-->
+
+	<!--BEGIN  Arts & Culture Sector -->
+		<div id="arts-culture" class="sector">
+			<div class="sector-header">
+				<h2>Arts and Culture</h2>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nisl purus, at volutpat odio scelerisque et. Mauris dictum ipsum nec nibh tincidunt hendrerit. Fusce eu nunc non velit vestibulum ullamcorper. Nulla lacinia erat commodo, sagittis justo et, tempus libero. Fusce quis sem magna. Aliquam dapibus felis ut euismod feugiat. Morbi vestibulum sem mauris, pulvinar scelerisque nunc fermentum quis.</p>
+			</div>
+
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+
+				  	<li class="active dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Cultural Participation <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#cultural-participation-dashboard" data-toggle="tab">Cultural Participation Dashboard</a></li>
+							<li><a href="#consumer-programming" data-toggle="tab">Consumer Programming</a></li>
+							<li><a href="#cultural-places" data-toggle="tab">Cultural Places</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Arts and Economic Development <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#consumer-expenditures" data-toggle="tab">Consumer Expenditures</a></li>
+							<li><a href="#arts-and-businesses" data-toggle="tab">Arts and Arts Businesses</a></li>
+							<li><a href="#nonprofit-arts-revenues" data-toggle="tab">Nonprofit arts revenues</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="cultural-participation-dashboard">
+				  	<iframe src="http://public.tableausoftware.com/views/Arts/CulturalProgramingDashboard?:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="consumer-programming">
+				  	<iframe src="http://public.tableausoftware.com/views/Arts/CulturalParticipationDashboard?:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="cultural-places">
+					<iframe src="http://public.tableausoftware.com/views/Arts/CulturalPlaces?:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="consumer-expenditures">
+					<iframe src="http://public.tableausoftware.com/views/Arts/ConsumerExpendituresDashboard?:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="arts-and-businesses">
+					<iframe src="http://public.tableausoftware.com/views/Arts/ArtistsandArtsBusinessesDashboard?:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="nonprofit-arts-revenues">
+					<iframe src="http://public.tableausoftware.com/views/Arts/NonProfitArtsRevenuesDashboard?:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Arts & Culture Sector-->
+
+
+	<!--BEGIN Economy Sector -->
+		<div id="economy" class="sector">
+			<div class="sector-header">
+				<h2>Economy</h2>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nisl purus, at volutpat odio scelerisque et. Mauris dictum ipsum nec nibh tincidunt hendrerit. Fusce eu nunc non velit vestibulum ullamcorper. Nulla lacinia erat commodo, sagittis justo et, tempus libero. Fusce quis sem magna. Aliquam dapibus felis ut euismod feugiat. Morbi vestibulum sem mauris, pulvinar scelerisque nunc fermentum quis.</p>
+			</div>
+
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+				  	<li class="active dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Unemployment <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#unemployment-ri" data-toggle="tab">Unemployment (RI, regional, US)</a></li>
+							<li><a href="#unemployment-by-race" data-toggle="tab">Unemployment by Race and Ethnicity (RI)</a></li>
+						</ul>
+					</li>
+					<li><a href="#median-household-income-state" data-toggle="tab">Median Household Income by State</a></li>
+					<li><a href="#education-race-ethnicity" data-toggle="tab">Education by Race and Ethnicity</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="unemployment-ri">
+				  	<iframe src="http://public.tableausoftware.com/views/EconomicSecurity/UnemploymentByState?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="unemployment-by-race">
+				  	<iframe src="http://public.tableausoftware.com/views/EconomicSecurity/RIUnemploymentRatebyRaceEthnicity?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="median-household-income-state">
+					<iframe src="http://public.tableausoftware.com/views/EconomicSecurity/MedianHouseholdIncomebyState?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="education-race-ethnicity">
+					<iframe src="http://public.tableausoftware.com/views/EconomicSecurity/EducationbyRaceEthnicity?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Economy Sector-->
+
+
+	<!--BEGIN Housing Sector -->
+		<div id="housing" class="sector">
+			<div class="sector-header">
+				<h2>Housing</h2>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nisl purus, at volutpat odio scelerisque et. Mauris dictum ipsum nec nibh tincidunt hendrerit. Fusce eu nunc non velit vestibulum ullamcorper. Nulla lacinia erat commodo, sagittis justo et, tempus libero. Fusce quis sem magna. Aliquam dapibus felis ut euismod feugiat. Morbi vestibulum sem mauris, pulvinar scelerisque nunc fermentum quis.</p>
+			</div>
+
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+				  	<li class="active"><a href="#affordable-housing-stock" class data-toggle="tab">Affordable Housing Stock</a></li>			 
+					<li><a href="#number-of-homeless" data-toggle="tab"> Number of Homeless </a></li>
+					<li><a href="#total-permanent-supportive-housing-beds" data-toggle="tab">Total Permanent Supportive Housing Beds</a></li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="affordable-housing-stock">
+				  	<iframe src="http://public.tableausoftware.com/views/CommunityDevelopment/AffordableHousingStock?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="number-of-homeless">
+				  	<iframe src="http://public.tableausoftware.com/views/CommunityDevelopment/HomelessPopulationDemographics?amp;:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="total-permanent-supportive-housing-beds">
+					<iframe src="http://public.tableausoftware.com/views/CommunityDevelopment/PermanentHousing?:embed=y&:display_count=no&:showVizHome=no" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Housing Sector-->
+
+	</div><!--End Sectors -->
+</div><!-- end container-->
+
+<div id="footer">
+	<div class="content">
+		Rhode Island Foundation -- Community Dashboard 
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/scrolly.js"></script>
+
 
 </body>
 </html>
