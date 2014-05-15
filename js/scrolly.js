@@ -31,19 +31,32 @@ function moveContent(targ){
 
   var x = targ;
   var xPos = $(x).position().top;
+  var len = 30;
 
   switch(x){
     case "#education":
-      $(window).scrollTop(xPos- 40);
+      $(window).scrollTop(xPos);
       console.log(xPos);
     break;
 
     case "#human-services":
-      $(window).scrollTop(xPos - 140);
+      $(window).scrollTop(xPos - len);
     break;
 
     case "#environment":
-      $(window).scrollTop(xPos - 140);
+      $(window).scrollTop(xPos - len);
+    break;
+
+    case "#arts-culture":
+      $(window).scrollTop(xPos - len);
+    break;
+
+    case "#economy":
+      $(window).scrollTop(xPos - len);
+    break;
+
+    case "#housing":
+      $(window).scrollTop(xPos - len);
     break;
   }
 }
