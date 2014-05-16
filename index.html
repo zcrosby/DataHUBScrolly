@@ -22,12 +22,14 @@
 		</div>
 		<div id="nav">
 			<ul>
-				<li class="first"><a class="active" href="#education">Education</a></li>
-				<li><a href="#human-services">Human Services</a></li>
+				<li class="first"><a class="active" href="#education">Educational Success</a></li>
+				<li><a href="#healthy-lives">Healthy Lives</a></li>
 				<li><a href="#environment">Environment</a></li>
 				<li><a href="#arts-culture">Arts/Culture</a></li>
-				<li><a href="#economy">Economy</a></li>
+				<li><a href="#economic-security">Economic Security</a></li>
 				<li><a href="#housing">Housing</a></li>
+				<li><a href="#children-and-families">Children and Families</a></li>
+				<li><a href="#philantropy">Philathropy</a></li>
 			</ul>
 		</div>
 	</div>
@@ -59,7 +61,7 @@
 	<!--BEGIN Education Sector-->
 		<div id="education" class="sector">
 			<div class="sector-header">
-				<h2>Education</h2>
+				<h2>Educational Success</h2>
 			</div>
 			<div class="content">
 				<p>These indicators of student outcomes and educational leadership provide a snapshot of the state of public education in Rhode Island, including independent charter schools. The Foundation's goal in the education sector is to help reduce statewide drop-out rates for at-risk students. Here are a couple of charts to help depict the graduation rates our state.</p>
@@ -67,7 +69,22 @@
 
 			<div class="tab-container">
 				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
-					<li class="active"><a href="#four-year-grad-rate" data-toggle="tab">Four Year Graduation Rates</a></li>
+					<li class=" active dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Graduation Rates <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#four-year-grad-rate" data-toggle="tab">Four Year Graduation Rates</a></li>
+							<li><a href="#six-year-grad-rate" data-toggle="tab">Six Year Graduation Rates</a></li>
+						</ul>
+					</li>
+
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">School Attendance<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#chronic-absenteeism" data-toggle="tab"> Chronic Absenteeism</a></li>
+							<li><a href="#incidents-of-suspension" data-toggle="tab">Incidents of Suspension</a></li>
+							<li><a href="#student-eligibility-subsidized-lunch" data-toggle="tab">Student Eligibility for Subsidized Lunch</a></li>
+						</ul>
+					</li>
 					<li class=" dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Administrator Tenure <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -77,18 +94,30 @@
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown">School Attendance<b class="caret"></b></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">NECAP Assessments<b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#chronic-absenteeism" data-toggle="tab"> Chronic Absenteeism</a></li>
-							<li><a href="#incidents-of-suspension" data-toggle="tab">Incidents of Suspension</a></li>
-							<li><a href="#student-eligibility-subsidized-lunch" data-toggle="tab">Student Eligibility for Subsidized Lunch</a></li>
+							<li><a href="#grade-4-math-reading" data-toggle="tab">Grade 4 Math and Reading</a></li>
+							<li><a href="#grade-8-math-reading" data-toggle="tab">Grade 8 Math and Reading</a></li>
+							<li><a href="#grade-11-math-reading" data-toggle="tab">Grade 11 Math and Reading</a></li>
 						</ul>
 					</li>
 				</ul>
 			</div>
 			<div class="tab-content">
 				<div class="tab-pane active" id="four-year-grad-rate">
-				  	<iframe src="http://public.tableausoftware.com/views/Education_6/FourYearGraduationRate?:embed=y&:display_count=no &:showVizHome=no#2" seamless="seamless"></iframe></div>
+				  	<iframe src="http://public.tableausoftware.com/views/Education_6/FourYearGraduationRate?amp;:embed=y&:display_count=no&:showVizHome=no#" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="necap-assessments">
+				  	<iframe src="" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="six-year-grad-rate">
+				  	<iframe src="http://public.tableausoftware.com/views/Education_6/SIXYearGraduationRate?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="chronic-absenteeism">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/Absenteeism?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="incidents-of-suspension">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/SchoolSuspensions?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
 
 				<div class="tab-pane" id="principal-tenure-elementary">
 				  	<iframe src="http://public.tableausoftware.com/views/Education_6/PrincipleTenure?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
@@ -99,23 +128,26 @@
 				<div class="tab-pane" id="principal-tenure-highschool">
 					<iframe src="http://public.tableausoftware.com/views/Education_6/PrincipleTenure?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
 
-				<div class="tab-pane" id="chronic-absenteeism">
-					<iframe src="http://public.tableausoftware.com/views/Education_6/Absenteeism?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
-
-				<div class="tab-pane" id="incidents-of-suspension">
-					<iframe src="http://public.tableausoftware.com/views/Education_6/SchoolSuspensions?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
-
 				<div class="tab-pane" id="student-eligibility-subsidized-lunch">
 					<iframe src="http://public.tableausoftware.com/views/Education_6/FreeReducedLunch?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+				
+				<div class="tab-pane" id="grade-4-math-reading">
+					<iframe src="http://public.tableausoftware.com/views/Education_6/NECAPREADING?amp;:embed=y&:display_count=no&:showVizHome=no#" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="">
+					<iframe src="" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="">
+					<iframe src="" seamless="seamless"></iframe></div>
 			</div>
 			<!--END Tab-Content-->
 		</div><!--END Education Sector-->
 
 
-	<!--BEGIN Human Services Sector-->
-		<div id="human-services" class="sector">
+	<!--BEGIN Healthy Lives Sector-->
+		<div id="healthy-lives" class="sector">
 			<div class="sector-header">
-				<h2>Human Services</h2>
+				<h2>Healthy Lives</h2>
 			</div>
 
 			<div class="content">
@@ -138,7 +170,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Patient Centered Medical Home <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#children-with-medical-home" data-toggle="tab">Children with Medical Home</a></li>
-							<li><a href="#children-with-medical-home-map" data-toggle="tab">Children with medical home map</a></li>
+							<li><a href="#children-with-medical-home-map" data-toggle="tab">Children with Medical Home Map</a></li>
 							<li><a href="#preventive-care" data-toggle="tab">Preventive Care</a></li>
 							<li><a href="#preventive-care-map" data-toggle="tab">Preventive Care Map</a></li>
 						</ul>
@@ -219,17 +251,22 @@
 					</li>
 
 					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Local Food<b class="caret"></b></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Local Food Economy<b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="#agricultural-converted-developed-land" data-toggle="tab">Agricultural Land Converted to Developed Land</a></li>
 							<li><a href="#agricultural-sales" data-toggle="tab">Agricultural Sales</a></li>
 						</ul>
 					</li>
-					<li><a href="#means-transportation-work" data-toggle="tab">Means of Transportation to Work</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Transportation <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#means-transportation-work" data-toggle="tab">Means of Transportation to Work</a></li>	
+						</ul>
+					</li>
 				</ul>
 			</div>
 			<div class="tab-content">
-				<div class="tab-pane" id="beach-closures">
+				<div class="tab-pane active" id="beach-closures">
 					<iframe src="http://public.tableausoftware.com/views/Enviorment/BeachClosuresandRainfallbyYear?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
 
 				<div class="tab-pane" id="days-exceeding-ozone-standard">
@@ -268,7 +305,7 @@
 				  	<li class="active dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Cultural Participation <b class="caret"></b></a>
 						<ul class="dropdown-menu">
-							<li><a href="#cultural-participation-dashboard" data-toggle="tab">Cultural Participation Dashboard</a></li>
+							<li><a href="#cultural-participation-dashboard" data-toggle="tab">Cultural Participation Dashboard (RI)</a></li>
 							<li><a href="#consumer-programming" data-toggle="tab">Consumer Programming</a></li>
 							<li><a href="#cultural-places" data-toggle="tab">Cultural Places</a></li>
 						</ul>
@@ -307,10 +344,10 @@
 		</div><!--END Arts & Culture Sector-->
 
 
-	<!--BEGIN Economy Sector -->
-		<div id="economy" class="sector">
+	<!--BEGIN Economic Security Sector -->
+		<div id="economic-security" class="sector">
 			<div class="sector-header">
-				<h2>Economy</h2>
+				<h2>Economic Security</h2>
 			</div>
 			<div class="content">
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nisl purus, at volutpat odio scelerisque et. Mauris dictum ipsum nec nibh tincidunt hendrerit. Fusce eu nunc non velit vestibulum ullamcorper. Nulla lacinia erat commodo, sagittis justo et, tempus libero. Fusce quis sem magna. Aliquam dapibus felis ut euismod feugiat. Morbi vestibulum sem mauris, pulvinar scelerisque nunc fermentum quis.</p>
@@ -323,6 +360,14 @@
 						<ul class="dropdown-menu">
 							<li><a href="#unemployment-ri" data-toggle="tab">Unemployment (RI, regional, US)</a></li>
 							<li><a href="#unemployment-by-race" data-toggle="tab">Unemployment by Race and Ethnicity (RI)</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Talent Pipeline <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#job-sectors" data-toggle="tab">Job Sectors</a></li>
+							<li><a href="#unemployment-in-ri" data-toggle="tab">Unemployment in RI</a></li>
+							<li><a href="#underemployment-by-state" data-toggle="tab">Underemployment by State</a></li>
 						</ul>
 					</li>
 					<li><a href="#median-household-income-state" data-toggle="tab">Median Household Income by State</a></li>
@@ -339,11 +384,20 @@
 				<div class="tab-pane" id="median-household-income-state">
 					<iframe src="http://public.tableausoftware.com/views/EconomicSecurity/MedianHouseholdIncomebyState?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
 
+				<div class="tab-pane" id="job-sectors">
+					<iframe src="http://public.tableausoftware.com/profile/#!/vizhome/CommunityDevelopment/JobSectors&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="unemployment-in-ri">
+					<iframe src="http://public.tableausoftware.com/views/EconomicSecurity/RhodeIslandUnemployment?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="underemployment-by-state">
+					<iframe src="http://public.tableausoftware.com/profile/#!/vizhome/CommunityDevelopment/UnderemploymentbyState&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
 				<div class="tab-pane" id="education-race-ethnicity">
 					<iframe src="http://public.tableausoftware.com/views/EconomicSecurity/EducationbyRaceEthnicity?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
 			</div>
 			<!--END Tab-Content-->
-		</div><!--END Economy Sector-->
+		</div><!--END Economic Security Sector-->
 
 
 	<!--BEGIN Housing Sector -->
@@ -375,6 +429,104 @@
 			<!--END Tab-Content-->
 		</div><!--END Housing Sector-->
 
+
+	<!--BEGIN Children and Families Sector -->
+		<div id="children-and-families" class="sector">
+			<div class="sector-header">
+				<h2>Children and Families</h2>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nisl purus, at volutpat odio scelerisque et. Mauris dictum ipsum nec nibh tincidunt hendrerit. Fusce eu nunc non velit vestibulum ullamcorper. Nulla lacinia erat commodo, sagittis justo et, tempus libero. Fusce quis sem magna. Aliquam dapibus felis ut euismod feugiat. Morbi vestibulum sem mauris, pulvinar scelerisque nunc fermentum quis.</p>
+			</div>
+
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+
+					<li class="active dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Child Poverty <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#children-in-poverty" data-toggle="tab">Children in poverty</a></li>
+							<li><a href="#TANF" data-toggle="tab"> % TANF</a></li>
+							<li><a href="#children-single-parent-family" data-toggle="tab">Children Living in Single Parent Family </a></li>
+							<li><a href="#children-unemployed-parent" data-toggle="tab"> Children in Household with Unemployed Parent</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Foster Care and Juvenile Detention<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#foster-care-race" data-toggle="tab">Foster Care by Race </a></li>
+							<li><a href="#juvenile-offenses-race" data-toggle="tab"> Juvenile Offenses by Race</a></li>
+							<li><a href="#juvenile-offenses-per-year" data-toggle="tab">Juvenile Offenses per Year </a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Teen Pregnancy <b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="#birth-rate-females-15-19" data-toggle="tab"> Birth Rate for Females 15-19 </a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="children-in-poverty">
+				  	<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/ChildrenInPoverty?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="TANF">
+					<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/TANF_1?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="children-single-parent-family">
+					<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/ChildrenLivinginSingleParentFamily?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="children-unemployed-parent">
+					<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/ChildreninaHouseholdwithanUnemployedParent?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="foster-care-race">
+					<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/FosterCareByRace?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="juvenile-offenses-race">
+					<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/JuvenileOffensesByRaceEthnicity?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="juvenile-offenses-per-year">
+					<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/RhodeIslandTotalJuvenileOffensesPerYearBar?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="birth-rate-females-15-19">
+					<iframe src="http://public.tableausoftware.com/views/HumanServicesEdit/TeenBirthRate?amp;:embed=y&:display_count=no&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="">
+					<iframe src="" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Housing Sector-->
+
+	<!--BEGIN Philanthropy Sector -->
+		<div id="philantropy" class="sector">
+			<div class="sector-header">
+				<h2>Philanthropy</h2>
+			</div>
+			<div class="content">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis placerat nisl purus, at volutpat odio scelerisque et. Mauris dictum ipsum nec nibh tincidunt hendrerit. Fusce eu nunc non velit vestibulum ullamcorper. Nulla lacinia erat commodo, sagittis justo et, tempus libero. Fusce quis sem magna. Aliquam dapibus felis ut euismod feugiat. Morbi vestibulum sem mauris, pulvinar scelerisque nunc fermentum quis.</p>
+			</div>
+
+			<div class="tab-container">
+				<ul id="tabs" class="nav nav-tabs" data-tabs="tabs">
+					<li class="active"><a href="#state-ranking" data-toggle="tab"> State Ranking</a></li>
+					<li><a href="#total-charitable-giving" data-toggle="tab">Total Charitable Giving in RI </a></li>
+					<li><a href="#median-contribution-household" data-toggle="tab"> Median Charitable Contribution per Household</a></li>					
+				</ul>
+			</div>
+			<div class="tab-content">
+				<div class="tab-pane active" id="state-ranking">
+					<iframe src="http://public.tableausoftware.com/views/InspiringPhilanthropy/GenerosityinAmericas50BiggestCities#1&:showVizHome=no#2" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="total-charitable-giving">
+				  	<iframe src="" seamless="seamless"></iframe></div>
+
+				<div class="tab-pane" id="Median-contribution-household">
+					<iframe src="" seamless="seamless"></iframe></div>
+			</div>
+			<!--END Tab-Content-->
+		</div><!--END Philanthropy Sector-->
+
 	</div><!--End Sectors -->
 </div><!-- end container-->
 
@@ -387,7 +539,6 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/scrolly.js"></script>
-
 
 </body>
 </html>

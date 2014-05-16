@@ -296,16 +296,13 @@ h1, h2, h3, h4, h5{
 }
 
 #nav{
-	width: 960px;
+	width: 1111px;
 	height: 35px;
 	margin: 20px auto 10px auto;
 	list-style-type: none;	
 }
 
 #nav ul{
-
-	/*width: 95%;
-	margin: auto;*/
 	margin:0px;
     padding:0px;
 	width: 100%;
@@ -314,7 +311,7 @@ h1, h2, h3, h4, h5{
 
 #nav li{
 
-    margin-left: 65px;
+    margin-left: 18px;
 	font-size: 1.15em;
 	display: inline;
 	font-size: 1.15em;
