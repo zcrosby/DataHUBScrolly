@@ -1,6 +1,11 @@
 import xlrd
+import json
 
-
+def main():
+	raw_file = "xl_files/May_2104_Dashboard_Indicators.xlsx"
+	parsed_xl_file = parse(raw_file)
+	with open("indicators.json", "w") as f:
+		f.write(parsed_xl_file)
 
 def parse(file):
 	"""parses a .xlsx file to a json-like object"""
@@ -17,29 +22,24 @@ def parse(file):
 	num_of_rows = worksheet.nrows
 
 	#empty list to add rows to
-	worksheet_items = []
+	items = []
 
+	#add each row value to a dict, append dict to list
 	for sheet in workbook.sheets():
-		print "worksheet: ", sheet.name
-		for row in range(sheet.nrows):
-			items = []
-			for col in range(sheet.ncols):
-				items.append(sheet.cell(row, col).value)
-			worksheet_items.append(items)
-			#print ",".join(items)
-	print worksheet_items
-	#create a list of dictionaries
+		for row in range(sheet.nrows):#row is type int
+			indicator_list = []
+			for col in range(sheet.ncols):#col is also type int
+				cell = sheet.cell(row, col).value
+				indicator_list.append(cell)
+				#indicator["sector"] = col[1]
+			indicator_dict = {}
+			indicator_dict["indicator"] = indicator_list[0]
+			indicator_dict["sector"] = indicator_list[1]
+			indicator_dict["sub-section"] = indicator_list[2]
+			indicator_dict["url"] = indicator_list[3]
+			items.append(indicator_dict)
 
-
-	#print(ind_list)
-
-	#return parsed_data
-
-
-def main ():
-	f = "May_2014_Dashboard_Indicators.xlsx"
-
-	parse(f)
+	return json.dumps(items)
 
 if __name__ == "__main__":
-    main()
+	main()
